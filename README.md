@@ -1,2 +1,2 @@
-# Réseau social réaliser avec NodeJS / ReactJS / MongoDB
+# Réseau social développer avec NodeJS / ReactJS / MongoDB
  
