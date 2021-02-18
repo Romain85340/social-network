@@ -21,7 +21,9 @@ app.get("/jwtid", requireAuth, (req, res) => {
 
 // Routes
 const userRoutes = require("./routes/user.routes");
+const postRoutes = require("./routes/post.routes");
 app.use("/api/user", userRoutes);
+app.use("/api/post", postRoutes);
 
 // Server
 app.listen(process.env.PORT, () => {
