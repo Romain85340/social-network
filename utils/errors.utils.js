@@ -5,13 +5,13 @@ module.exports.signUpErrors = (err) => {
         errors.pseudo = "Pseudo incorrect ou déjà pris";
 
     if(err.message.includes('email'))
-        errors.pseudo = "Email incorrect";
+        errors.email = "Email incorrect";
 
     if(err.message.includes('password'))
-        errors.pseudo = "Le mot de passe doit faire 6 caractères minimum";
+        errors.password = "Le mot de passe doit faire 6 caractères minimum";
 
     if(err.code === 11000 && Object.keys(err.keyValue)[0].includes('pseudo'))
-        errors.email = "Ce pseudo est déjà pris";
+        errors.pseudo = "Ce pseudo est déjà pris";
 
     if(err.code === 11000 && Object.keys(err.keyValue)[0].includes('email'))
         errors.email = "Cet email est déjà enregistré";
