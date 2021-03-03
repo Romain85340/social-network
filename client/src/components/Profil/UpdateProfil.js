@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { updateBio } from '../../actions/user.actions'
 import LeftNav from '../LeftNav'
 import { dateParser } from '../Utils'
+import FollowHandler from './FollowHandler'
 import UploadImg from './UploadImg'
 
 export default function UpdateProfil() {
@@ -65,7 +66,9 @@ export default function UpdateProfil() {
                                             <li key={user._id}>
                                                 <img src={user.picture} alt=""/>
                                                 <h4>{user.pseudo}</h4>
-                                                <h1>FOLLOW HANDLER</h1>
+                                                <div className="follow-handler">
+                                                    <FollowHandler idToFollow={user._id}/>
+                                                </div>
                                             </li>
                                         )
                                     }
@@ -88,7 +91,9 @@ export default function UpdateProfil() {
                                             <li key={user._id}>
                                                 <img src={user.picture} alt=""/>
                                                 <h4>{user.pseudo}</h4>
-                                                <h1>FOLLOW HANDLER</h1>
+                                                <div className="follow-handler">
+                                                    <FollowHandler idToFollow={user._id}/>
+                                                </div>
                                             </li>
                                         )
                                     }
