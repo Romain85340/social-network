@@ -15,7 +15,7 @@ export default function Navbar() {
                     <NavLink exact to="/">
                         <div className="logo">
                             <img src="./img/logo.png" alt="icon"/>
-                            <h3>InstaFake 😕</h3>
+                            <h3>Instafake</h3>
                         </div>
                     </NavLink>
                 </div>
